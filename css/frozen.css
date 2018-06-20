@@ -390,7 +390,7 @@ h3,h4{font-size:16px}
 .ui-list li>h5,.ui-list:not(.ui-list-text) li>p{color:#777;font-size:14px}
 .ui-list li.active,.ui-list-active>li:active{margin-left:0;padding-left:15px;background-color:#e5e6e7}
 .ui-list-active>li:active,.ui-list>li.active,.ui-list>li.active+li.ui-border-t,.ui-list>li.active+li>.ui-border-t,.ui-list>li.active>.ui-border-t{background-image:none;border-top-color:#e5e6e7}
-.ui-list-link>li:after{position:absolute;top:50%;right:0px;display:block;margin-top:-22px;margin-right:-10px;color:rgba(0,0,0,.5);color:#c7c7c7;content:"";font-style:normal;font-size:32px;font-family:iconfont!important;line-height:44px;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:.2px}
+.ui-list-link>li:after{position:absolute;top:50%;right:0px;display:block;margin-top:-22px;margin-right:5px;color:rgba(0,0,0,.5);color:#c7c7c7;content:"";font-style:normal;font-size:32px;font-family:iconfont!important;line-height:44px;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:.2px}
 @media (max-width:320px){.ui-list-link>li:after{right:10px}
 }
 .ui-list-text.ui-list-link>li{padding-right:30px}
