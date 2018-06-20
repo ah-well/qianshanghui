@@ -60,7 +60,7 @@ window.onload = function () {
         commentBox.className = 'comment-box clearfix';
         commentBox.setAttribute('user', 'self');
         commentBox.innerHTML =
-            '<img class="myhead" src="images/my.jpg" alt=""/>' +
+            '<img class="myhead" src="static/images/chang2/my-avator.png" alt=""/>' +
                 '<div class="comment-content">' +
                 '<p class="comment-text"><span class="user">我：</span>' + textarea.value + '</p>' +
                 '<p class="comment-time">' +

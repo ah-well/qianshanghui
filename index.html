@@ -13,7 +13,11 @@
     <link rel="stylesheet" type="text/css" href="static/css/demo.css" />
     <link rel="stylesheet" type="text/css" href="static/css/demo2.css" />
 
-
+    <style type="text/css">
+        .searchbar{
+            background: #fff;
+        }
+    </style>
 	<title>千商汇</title>
 </head>
 <body>
@@ -21,14 +25,26 @@
         <div class="view">
             <div class="pages">
                 <div class="page">
+                    <!-- <form class="searchbar">
+                        <div class="searchbar-input">
+                            <input type="search" placeholder="输入关键词进行搜索">
+                            <a href="#" class="searchbar-clear"></a>
+                        </div>
+                        <a href="#" class="searchbar-cancel">取消</a>
+                    </form>
+                    <div class="searchbar-overlay"></div> -->
+                    <form class="searchbar searchbar-init" data-search-list=".list-block-search" data-search-in=".item-title" data-found=".searchbar-found" data-not-found=".searchbar-not-found">
+                        <div class="searchbar-input">
+                            <input type="search" placeholder=" 输入关键词进行搜索" maxlength="16">
+                            <a href="#" class="searchbar-clear"></a>
+                        </div>
+                        <a href="#" class="searchbar-cancel">取消</a>
+                    </form>
+
+                    <div class="searchbar-overlay"></div>
+
                     <div class="page-content">
-                        <form class="searchbar">
-                            <div class="searchbar-input">
-                                <input type="search" placeholder="输入关键词进行搜索">
-                                <a href="#" class="searchbar-clear"></a>
-                            </div>
-                            <a href="#" class="searchbar-cancel">取消</a>
-                        </form>
+
                         <div id="topSwiper" class="swiper-container">
                             <div class="swiper-wrapper">
                               <div class="swiper-slide" data-swiper-autoplay="2000">
@@ -255,6 +271,10 @@
         //     autoplay:true,
         //     loop:true,
         //     direction: 'vertical'
+        // });
+        // var mySearchbar = myApp.searchbar('.searchbar', {
+        //     searchList: '.list-block-search',
+        //     searchIn: '.item-title'
         // });
     </script>
 </body>

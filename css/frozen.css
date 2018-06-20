@@ -384,7 +384,7 @@ h3,h4{font-size:16px}
 .ui-list-icon{width:40px;height:40px}
 .ui-list .ui-avatar,.ui-list .ui-avatar-lg,.ui-list .ui-avatar-s{margin:10px 10px 10px 0}
 .ui-list-info{display:-webkit-box;padding-top:10px;padding-right:15px;padding-bottom:10px;-webkit-box-flex:1;-webkit-box-orient:vertical;-webkit-box-pack:center}
-.ui-list-info p{color:#777;font-size:14px}
+.ui-list-info p{color:#777;font-size:14px;margin: 0;}
 .ui-list-text .ui-list-info{padding-top:0;padding-bottom:0}
 .ui-list li h4{font-size:16px}
 .ui-list li>h5,.ui-list:not(.ui-list-text) li>p{color:#777;font-size:14px}
