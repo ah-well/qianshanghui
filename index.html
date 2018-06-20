@@ -1,79 +1,87 @@
-<!doctype html>
-<html>
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-<title>无标题文档</title>
-<script src="js/zepto.min.js"></script>
-<link href="css/swiper.min.css" rel="stylesheet">
-<script type="text/javascript" src="js/swiper.min.js"></script>
-<script src="js/frozen.js"></script>
-<link rel="stylesheet" href="css/frozen.css">
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/font-awesome.min.css">
+	<meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" type="text/css" href="static/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="static/framework7/css/framework7.ios.min.css" />
+    <link rel="stylesheet" type="text/css" href="static/framework7/css/framework7.ios.colors.min.css" />
+    <link rel="stylesheet" type="text/css" href="static/framework7/css/extend.css" />
+    <link rel="stylesheet" type="text/css" href="static/css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="static/css/demo2.css" />
 
+    <style type="text/css">
+        .toolbar-inner {padding: 0 0 0 0; }
+
+
+    </style>
+
+	<title>千商汇</title>
 </head>
-<body> 
-	  
-	  
-<script>
-	window.onload=function(){
-
-		var swiper = new Swiper('.swiper-container', {
-
-	        pagination: '.m1',
-
-	        paginationClickable: true,
-
-	        spaceBetween: 30,
-
-	        centeredSlides: true,
-
-	        autoplay: 2500,
-
-	        autoplayDisableOnInteraction: false
-
-	    });
-	
-
-  
-	}
-
-</script> 
-   <div class="swiper-container">
-       <div class="pngzz"><img src="images/pngzz.png"></div>
-        <div class="swiper-wrapper">
-		                <div class="swiper-slide"><a href="#"><img src="images/banner01.jpg" width="100%"></a></div>
-                        <div class="swiper-slide"><a href="#"><img src="images/banner01.jpg" width="100%"></a></div>
-                        <div class="swiper-slide"><a href="#"><img src="images/banner01.jpg" width="100%"></a></div>
-                        <div class="swiper-slide"><a href="#"><img src="images/banner01.jpg" width="100%"></a></div>
-            		</div>
-        <div class="swiper-pagination m1"></div>
-    </div>
-
-
-<div class="box padd15b icon4">
-	<ul class="ui-row">
-		<li class="ui-col ui-col-25"><a href="#"><img src="images/topicon01.png"><span>社保代缴</span></a></li>
-		<li class="ui-col ui-col-25"><a href="#"><img src="images/topicon02.png"><span>社保补缴</span></a></li>
-		<li class="ui-col ui-col-25"><a href="#"><img src="images/topicon03.png"><span>公积金代缴</span></a></li>
-		<li class="ui-col ui-col-25"><a href="#"><img src="images/topicon04.png"><span>公积金补缴</span></a></li>
-	</ul>
-	
-</div>
-
-
-
+<body>
 	<div class="views">
         <div class="view">
             <div class="pages">
                 <div class="page">
                     <div class="page-content">
-
+                        <form class="searchbar">
+                            <div class="searchbar-input">
+                                <input type="search" placeholder="输入关键词进行搜索">
+                                <a href="#" class="searchbar-clear"></a>
+                            </div>
+                            <a href="#" class="searchbar-cancel">取消</a>
+                        </form>
+                        <div id="topSwiper" class="swiper-container">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide" data-swiper-autoplay="2000">
+                                <img src="images/b1.png"></img>
+                              </div>
+                              <div class="swiper-slide" data-swiper-autoplay="2000">
+                                <img src="images/b2.png"></img>
+                              </div>
+                              <div class="swiper-slide" data-swiper-autoplay="2000">
+                                <img src="images/图层 10.png"></img>
+                              </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="hold-content">
+                            <div class="row">
+                                <a href="personCenter/companyMsg.html" class="col-25 external">
+                                    <img src="static/images/chang2/xw.png"></img>
+                                    <p>新闻公告</p>
+                                </a>
+                                <a href="cocMember/inform.html" class="col-25 external">
+                                    <img src="static/images/chang2/wj.png"></img>
+                                    <p>商会文件</p>
+                                </a>
+                                <a href="cocMember/myGroup.html" class="col-25 external">
+                                    <img src="static/images/chang2/hd.png"></img>
+                                    <p>商会活动</p>
+                                </a>
+                            </div>
+                            <div class="row">
+                                <a href="resourceDemand/resourceDemand.html" class="col-25 external">
+                                    <img src="static/images/chang2/hy.png"></img>
+                                    <p>商会会议</p>
+                                </a>
+                                <a href="activity/main.html" class="col-25 external">
+                                    <img src="static/images/chang2/qy.png"></img>
+                                    <p>企业展示</p>
+                                </a>
+                                <a href="activity/xingcheng.html" class="col-25 external">
+                                    <img src="static/images/chang2/hz.png"></img>
+                                    <p>资源合作</p>
+                                </a>
+                            </div>
+                        </div>
                         <div class="roll-content">
                             <div class="sub-title">
                                 <a href="notice.html" class="col-25 external">
-                                    <img src="static/images/chang2/title-notice.png" />
+                                    <img src="static/images/chang2/tv.png" />
                                 </a>
                             </div>
                             <!-- <div class="text-sides">
@@ -113,10 +121,10 @@
                         </div>
 
 
-                        <div class="ent-temp">
+                        <div class="ent-temp" style="margin-top: 1px">
                             <div class="sub-title">
                                 <a href="entShow.html" class="col-25 external">企业展示</a>
-                                <a href="entShow.html" class="col-25 external">MORE>></a>
+                                <a href="entShow.html" class="col-25 external">查看全部>></a>
                             </div>
                             <ul class="tempList">
                                 <a href="../template/index.html?isBase=1" class="col-25 external">
@@ -186,21 +194,73 @@
                 </div>
             </div>
         </div>
-
+        <div class="toolbar tabbar">
+            <div class="toolbar-inner">
+                <a href="#" class="tab-link externa">
+                    <div class="bar-content active-bar">
+                        <img src="./images/icon01.png"></img>
+                        <p>首页</p>
+                    </div>
+                </a>
+                <a href="./message.html" class="tab-link externa">
+                    <div class="bar-content">
+                        <img src="./images/icon01.png"></img>
+                        <p>消息</p>
+                    </div>
+                </a>
+                <a href="./contacts.html" class="tab-link externa">
+                    <div class="bar-content">
+                        <img src="./images/icon01.png"></img>
+                        <p>通讯录</p>
+                    </div>
+                </a>
+                <a href="./circleOfChamber.html" class="tab-link externa">
+                    <div class="bar-content">
+                        <img src="./images/icon01.png"></img>
+                        <p>商会圈</p>
+                    </div>
+                </a>
+                <a href="./my.html" class="tab-link externa">
+                    <div class="bar-content">
+                        <img src="./images/icon01.png"></img>
+                        <p>我的</p>
+                    </div>
+                </a>
+            </div>
+        </div>
     </div>
 
 
 
-<div class="footer">
-    <ul>
-        <li><a href="#" class="active"><img src="images/icon01.png" alt=""><img src="images/icon011.png" alt="">首页</a></li>
-        <li><a href="#"><img src="images/icon02.png" alt=""><img src="images/icon022.png" alt="">消息</a></li>
-        <li><a href="#"><img src="images/icon03.png" alt=""><img src="images/icon033.png" alt="">通讯录</a></li>
-        <li><a href="#"><img src="images/icon03.png" alt=""><img src="images/icon033.png" alt="">商会圈</a></li>
-        <li><a href="#"><img src="images/icon04.png" alt=""><img src="images/icon044.png" alt="">我的</a></li>
-    </ul>
-</div>
 
-
+    <script type="text/javascript" src="static/framework7/js/framework7.min.js"></script>
+    <script type="text/javascript">
+        var myApp = new Framework7({
+           animateNavBackIcon: true,
+           modalTitle:"千商汇demo",
+           modalButtonOk:"确定",
+           modalButtonCancel:"取消"
+        });
+        myApp.swiper('#topSwiper', {
+            autoplay:true,
+            loop:true,
+            pagination:'.swiper-container .swiper-pagination'
+        });
+        myApp.swiper('#informSwiper', {
+            autoplay:true,
+            loop:true,
+            direction: 'vertical'
+        });
+        myApp.swiper('#resourceSwiper', {
+            autoplay:true,
+            loop:true,
+            direction: 'vertical'
+        });
+        // myApp.swiper('#imgTextSwiper', {
+        //     autoplay:true,
+        //     loop:true,
+        //     direction: 'vertical'
+        // });
+    </script>
 </body>
 </html>

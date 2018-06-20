@@ -9,7 +9,7 @@ input{outline:none;}
 /**公用元素**/
 nav{background: #ffffff;}
 .box{ background:#fff;zoom:1; overflow: hidden;}
-.box:after,.padd15:after,.padd15a:after,.padd15b:after{display:block;clear:both;content:"";visibility:hidden;height:0} 
+.box:after,.padd15:after,.padd15a:after,.padd15b:after{display:block;clear:both;content:"";visibility:hidden;height:0}
 
 .marg10{ margin: 10px;}
 .marg10a{ margin: 10px 0;}
@@ -63,7 +63,7 @@ nav{background: #ffffff;}
 
 /*脚部*/
 .footer{z-index:9000; position:fixed; bottom:0px; width:100%; max-width: 600px; background:#FFF; box-shadow:0 -3px 3px rgba(0,0,0,0.05); border-top:1px solid rgba(0,0,0,0.1)}
-.footer li{ width:20%; float:left; text-align:center; padding:8PX 0 5PX 0;}
+.footer li{ width:20%; float:left; text-align:center; padding:8px 0 5px 0;}
 .footer li a{ color:#333333; text-decoration:none;}
 .footer li a.active{ color:#2576ad;}
 .footer li img{ width:28%; margin:0px auto; display:block;}
@@ -162,7 +162,7 @@ a.cd-read-more:hover{background-color:#424242;text-decoration:none}
 
 .cssanimations .cd-timeline-content.is-hidden{visibility:hidden}
 .cssanimations .cd-timeline-content.bounce-in{visibility:visible;-webkit-animation:cd-bounce-2 .6s;-moz-animation:cd-bounce-2 .6s;animation:cd-bounce-2 .6s}
-.cdother{min-height:50px; margin:30px 50% 20px 0; line-height:46px; color: #75ce66; font-weight: bold;width: 43%; text-align: right;}	
+.cdother{min-height:50px; margin:30px 50% 20px 0; line-height:46px; color: #75ce66; font-weight: bold;width: 43%; text-align: right;}
 
 
 

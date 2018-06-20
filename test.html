@@ -14,37 +14,37 @@
 
 <script type="text/javascript">
 <!--
-$(function () {  
-            //window.open("http://www.baidu.com") ;       //自动打开新窗口,会被浏览器拦截，无效  
-  
-            //openNewWindow();//自动打开新窗口，模拟一个链接的点击事件，不会被拦截，推荐做法  
-  
-            //单击某个元素打开  
-            $(".ui-form-item-link").click(function(){  
-                openNewWindow();  
-            });  
-  
-           
-  
-            /**  
-             * 如果想要其他事件，请参考  
-             * 慕课网事件讲解：http://www.imooc.com/learn/429  
-             * 菜鸟网事件分类：http://www.runoob.com/jquery/jquery-events.html  
-             * W3school事件列表：http://www.w3school.com.cn/jquery/jquery_ref_events.asp  
-             */  
-  
-        });  
+$(function () {
+            //window.open("http://www.baidu.com") ;       //自动打开新窗口,会被浏览器拦截，无效
+
+            //openNewWindow();//自动打开新窗口，模拟一个链接的点击事件，不会被拦截，推荐做法
+
+            //单击某个元素打开
+            $(".ui-form-item-link").click(function(){
+                openNewWindow();
+            });
 
 
- //打开新窗口，一切事件都调用该方法  
-        function openNewWindow() {  
-            //var a = $('a')[0];  
-            let a = $("<a href='对话.html' target='_self'>baidu</a>").get(0);  
-            let e = document.createEvent('MouseEvents');  
-            e.initEvent( 'click', true, true );  
-            a.dispatchEvent(e);  
-        }  
-	
+
+            /**
+             * 如果想要其他事件，请参考
+             * 慕课网事件讲解：http://www.imooc.com/learn/429
+             * 菜鸟网事件分类：http://www.runoob.com/jquery/jquery-events.html
+             * W3school事件列表：http://www.w3school.com.cn/jquery/jquery_ref_events.asp
+             */
+
+        });
+
+
+ //打开新窗口，一切事件都调用该方法
+        function openNewWindow() {
+            //var a = $('a')[0];
+            let a = $("<a href='dialog.html' target='_self'>baidu</a>").get(0);
+            let e = document.createEvent('MouseEvents');
+            e.initEvent( 'click', true, true );
+            a.dispatchEvent(e);
+        }
+
 //-->
 </script>
 
@@ -77,7 +77,7 @@ $(function () {
             <div class="date"><span>6月6日</span> <span>阅读数1001</span></div>
         </div>
     </li>
-    
+
      <li class="ui-border-t  ui-form-item-link">
         <div class="ui-list-img">
              <span><img src="images/u8125.png"></span>
@@ -88,7 +88,7 @@ $(function () {
             <div class="date"><span>6月6日</span> <span>阅读数1001</span></div>
         </div>
     </li>
-    
+
      <li class="ui-border-t  ui-form-item-link">
         <div class="ui-list-img">
             <span><img src="images/u8125.png"></span>
@@ -99,7 +99,7 @@ $(function () {
             <div class="date"><span>6月6日</span> <span>阅读数1001</span></div>
         </div>
     </li>
-    
+
      <li class="ui-border-t  ui-form-item-link">
         <div class="ui-list-img">
             <span><img src="images/u8125.png"></span>
@@ -110,7 +110,7 @@ $(function () {
             <div class="date"><span>6月6日</span> <span>阅读数1001</span></div>
         </div>
     </li>
-    
+
      <li class="ui-border-t  ui-form-item-link">
         <div class="ui-list-img">
              <span><img src="images/u8125.png"></span>
@@ -122,7 +122,7 @@ $(function () {
         </div>
     </li>
 </ul>
-	
+
 </div>
 
 
