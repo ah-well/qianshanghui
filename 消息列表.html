@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<title>资讯动态</title>
+<script src="js/zepto.min.js"></script>
+<link href="css/swiper.min.css" rel="stylesheet">
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script src="js/frozen.js"></script>
+<link rel="stylesheet" href="css/frozen.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+
+<script type="text/javascript">
+<!--
+$(function () {  
+            //window.open("http://www.baidu.com") ;       //自动打开新窗口,会被浏览器拦截，无效  
+  
+            //openNewWindow();//自动打开新窗口，模拟一个链接的点击事件，不会被拦截，推荐做法  
+  
+            //单击某个元素打开  
+            $(".ui-form-item-link").click(function(){  
+                openNewWindow();  
+            });  
+  
+           
+  
+            /**  
+             * 如果想要其他事件，请参考  
+             * 慕课网事件讲解：http://www.imooc.com/learn/429  
+             * 菜鸟网事件分类：http://www.runoob.com/jquery/jquery-events.html  
+             * W3school事件列表：http://www.w3school.com.cn/jquery/jquery_ref_events.asp  
+             */  
+  
+        });  
+
+
+ //打开新窗口，一切事件都调用该方法  
+        function openNewWindow() {  
+            //var a = $('a')[0];  
+            let a = $("<a href='对话.html' target='_self'>baidu</a>").get(0);  
+            let e = document.createEvent('MouseEvents');  
+            e.initEvent( 'click', true, true );  
+            a.dispatchEvent(e);  
+        }  
+	
+//-->
+</script>
+
+
+</head>
+<body>
+
+<div class="padd15a box newsbox">
+	<ul class="ui-list">
+
+
+    <li class="ui-border-t ui-form-item-link">
+        <div class="ui-list-img">
+            <span><img src="images/u8125.png"></span>
+        </div>
+        <div class="ui-list-info">
+            <h4 class="ui-nowrap">广州将逐步推进社保卡异地使用</h4>
+            <p class="ui-nowrap">信息时报讯 （记者 黄艳 通讯员 穗人社宣） 昨日，市人社局发布广州市人力资源和社会保障事业发展第十三个五年</p>
+            <div class="date"><span>6月6日</span></div>
+      </div>
+    </li>
+
+		 <li class="ui-border-t  ui-form-item-link">
+        <div class="ui-list-img">
+            <span><img src="images/u8125.png"></span>
+        </div>
+        <div class="ui-list-info">
+            <h4 class="ui-nowrap">这是标题，加ui-nowrap可以超出长度截断</h4>
+            <p class="ui-nowrap">这是内容，加ui-nowrap可以超出长度截断</p>
+            <div class="date"><span>6月6日</span> </div>
+        </div>
+    </li>
+    
+     <li class="ui-border-t  ui-form-item-link">
+        <div class="ui-list-img">
+             <span><img src="images/u8125.png"></span>
+        </div>
+        <div class="ui-list-info">
+            <h4 class="ui-nowrap">这是标题</h4>
+            <p class="ui-nowrap">这是内容</p>
+            <div class="date"><span>6月6日</span> </div>
+        </div>
+    </li>
+    
+     <li class="ui-border-t  ui-form-item-link">
+        <div class="ui-list-img">
+            <span><img src="images/u8125.png"></span>
+        </div>
+        <div class="ui-list-info">
+            <h4 class="ui-nowrap">这是标题，加ui-nowrap可以超出长度截断</h4>
+            <p class="ui-nowrap">这是内容，加ui-nowrap可以超出长度截断</p>
+            <div class="date"><span>6月6日</span> </div>
+        </div>
+    </li>
+    
+     <li class="ui-border-t  ui-form-item-link">
+        <div class="ui-list-img">
+            <span><img src="images/u8125.png"></span>
+        </div>
+        <div class="ui-list-info">
+            <h4 class="ui-nowrap">这是标题，加ui-nowrap可以超出长度截断</h4>
+            <p class="ui-nowrap">这是内容，加ui-nowrap可以超出长度截断</p>
+            <div class="date"><span>6月6日</span> </div>
+        </div>
+    </li>
+    
+     <li class="ui-border-t  ui-form-item-link">
+        <div class="ui-list-img">
+             <span><img src="images/u8125.png"></span>
+        </div>
+        <div class="ui-list-info">
+            <h4 class="ui-nowrap">这是标题，加ui-nowrap可以超出长度截断</h4>
+            <p class="ui-nowrap">这是内容，加ui-nowrap可以超出长度截断</p>
+            <div class="date"><span>6月6日</span> </div>
+        </div>
+    </li>
+</ul>
+	
+</div>
+
+
+
+<div class="footer">
+    <ul>
+        <li><a href="首页.html"><img src="images/icon01.png" alt=""><img src="images/icon011.png" alt="">首页</a></li>
+        <li><a href="#" class="active"><img src="images/icon02.png" alt=""><img src="images/icon022.png" alt="">消息</a></li>
+        <li><a href="通讯录.html"><img src="images/icon03.png" alt=""><img src="images/icon033.png" alt="">通讯录</a></li>
+        <li><a href="商会圈2.html"><img src="images/icon04.png" alt=""><img src="images/icon044.png" alt="">商会圈</a></li>
+        <li><a href="我的.html"><img src="images/icon05.png" alt=""><img src="images/icon055.png" alt="">我的</a></li>
+    </ul>
+</div>
+
+
+    
+</body>
+</html>
