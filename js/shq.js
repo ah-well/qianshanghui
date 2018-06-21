@@ -38,12 +38,14 @@ window.onload = function () {
             praisesTotal.setAttribute('total', newTotal);
             praisesTotal.innerHTML = (newTotal == 1) ? '我觉得很赞' : '我和' + oldTotal + '个人觉得很赞';
             el.innerHTML = '取消赞';
+            el.parentNode.classList.add("active")
         }
         else {
             newTotal = oldTotal - 1;
             praisesTotal.setAttribute('total', newTotal);
             praisesTotal.innerHTML = (newTotal == 0) ? '' : newTotal + '个人觉得很赞';
             el.innerHTML = '赞';
+            el.parentNode.classList.remove("active")
         }
         praisesTotal.style.display = (newTotal == 0) ? 'none' : 'block';
     }

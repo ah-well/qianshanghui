@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-<title>个人信息</title>
+<title>企业信息</title>
 <script src="js/zepto.min.js"></script>
 <link href="css/swiper.min.css" rel="stylesheet">
 <script type="text/javascript" src="js/swiper.min.js"></script>
@@ -26,7 +26,7 @@
 
     }
     .ui-list li img{
-        width: 60px;
+        width: 100px;
         height: 60px;
     }
     .ui-list li .right{
@@ -34,8 +34,8 @@
         right: 15px;
         margin: 0 6px;
     }
-    .ui-list li:first-child .right{
-        width: 60px;
+    .ui-list li:last-child .right{
+        width: 100px;
         height: 60px;
         margin: 10px 0;
     }
@@ -59,78 +59,81 @@
 
 <div class="page-title">
     <i class="fa fa-angle-left" aria-hidden="true" onclick="javascript:history.back(-1);"></i>
-    个人信息
+    企业信息
 </div>
 
 <div class="box padd15a minebox">
     <ul class="ui-list ui-list-one ui-list-link ">
 
+
         <li class="ui-border-t">
-            <label>头像</label>
+            <label>公司名称 </label>
             <div class="right">
-                <img src="static/images/chang2/my-avator.png">
-                <!-- <input type="file" name=""> -->
+                <input type="text" name="" value="阿里巴巴集团" placeholder="请填写您的公司名称" maxlength="16">
             </div>
         </li>
         <li class="ui-border-t">
-            <label>姓名</label>
+            <label>公司地址</label>
             <div class="right">
-                <input type="text" name="" value="马云" placeholder="请填写您的真实姓名" maxlength="6">
+                <input type="tel" name="" value="浙江杭州" placeholder="请填写您的公司地址" maxlength="24">
             </div>
         </li>
         <li class="ui-border-t">
-            <label>手机</label>
+            <label>公司电话</label>
             <div class="right">
-                <input type="tel" name="" value="13812345678" placeholder="请填写您的手机号码" maxlength="11">
+                <input type="tel" name="" value="0754-78512" placeholder="请填写您的公司电话" maxlength="12">
             </div>
         </li>
         <li class="ui-border-t">
-            <label>籍贯</label>
+            <label>公司法人</label>
             <div class="right">
-                <input name="" value="广东" placeholder="请填写您的籍贯" maxlength="20">
+                <input type="text" name="" value="马云" placeholder="请填写您的公司法人" maxlength="6">
             </div>
         </li>
         <li class="ui-border-t">
-            <label>性别</label>
+            <label>成立时间</label>
             <div class="right">
-                <select name="sex">
-                    <option>男</option>
-                    <option>女</option>
-                </select>
+                <input id="birth" type="date" name="date" value="" placeholder="请选择公司成立时间" min="1960-01-01" max="2010-12-30">
             </div>
         </li>
         <li class="ui-border-t">
-            <label>生日</label>
+            <label>注册资金</label>
             <div class="right">
-                <input id="birth" type="date" name="date" value="" placeholder="请选择您的生日" min="1960-01-01" max="2010-12-30">
+                <input type="text" name="" value="59690万美元" placeholder="请填写公司注册资金" maxlength="20">
             </div>
         </li>
         <li class="ui-border-t">
-            <label>微信</label>
+            <label>员工人数</label>
             <div class="right">
-                <input type="text" name="" value="13812345678" placeholder="请填写您的微信号" maxlength="20">
+                <input type="number" name="" value="73780" placeholder="请填写公司的员工人数" max="99999">
             </div>
         </li>
         <li class="ui-border-t">
-            <label>邮箱</label>
+            <label>所属行业</label>
             <div class="right">
-                <input type="email" name="" value="91154554@163.com" placeholder="请填写您的邮箱" maxlength="20">
+                <input type="text" name="" value="信息行业" placeholder="请填写公司所属行业" maxlength="20">
             </div>
         </li>
         <li class="ui-border-t">
-            <label>企业名称</label>
+            <label>年度营业额</label>
             <div class="right">
-                <input type="text" name="" value="阿里巴巴集团控股有限公司" placeholder="请填写您的企业名称" maxlength="20">
+                <input type="text" name="" value="1582.73亿元" placeholder="请填写公司年度营业额" maxlength="20">
             </div>
         </li>
         <li class="ui-border-t">
-            <label>岗位职责</label>
+            <label>营业执照</label>
             <div class="right">
-                <input type="text" name="" value="董事" placeholder="请填写您的岗位职责" maxlength="20">
+                <img src="static/images/timg.jpg">
             </div>
         </li>
     </ul>
 </div>
 
 </body>
+
+<script type="text/javascript">
+    $(function(){
+        $("#birth").val("1999-09-09");
+    })
+</script>
 </html>

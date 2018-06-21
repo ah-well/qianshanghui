@@ -77,7 +77,7 @@ nav{background: #ffffff;}
 .news01 a{ color:#555;}
 
 .news02 li,.news03 li{ padding:10px 0px 10px 0; border-bottom: 1px solid #eee;}
-.news02 li:first-child,.news03 li:first-child{ padding-top: 0;} 
+.news02 li:first-child,.news03 li:first-child{ padding-top: 0;}
 .news02 h2 span{ position:absolute; right:0;font-size:0.9rem; font-weight: normal; top:-2px; font-family: arial;}
 .news02 h2{color:#111;padding-bottom: 5px; position: relative;}
 .news02 h2 strong{white-space: nowrap; overflow: hidden; font-size:0.94rem; text-overflow: ellipsis; padding-right:90px; display: block;}
@@ -89,9 +89,9 @@ nav{background: #ffffff;}
 .news03 p{ padding-top:10px;}
 .news03 strong{font-weight:normal; color: #888;}
 .news03 strong i,.news03 strong:first-child{color: #00a5e0; padding-right: 5px;}
-.news03 strong:first-child{} 
-.news03 strong:nth-child(2){ padding-left:10px;} 
-.news03 strong:last-child{ float: right;} 
+.news03 strong:first-child{}
+.news03 strong:nth-child(2){ padding-left:10px;}
+.news03 strong:last-child{ float: right;}
 
 /****/
 .header01{ position:relative; background:url(../images/bg_arrow.png) no-repeat right top;padding:0 0 10px 0; border-bottom: 1px solid #eee; margin-bottom: 15px;}
@@ -128,7 +128,7 @@ nav{background: #ffffff;}
 .taxpic .iconcolor span{ color:#5babe6;  position: absolute; left: 15px; top:13px; font-size:1.3rem;}
 .taxpic .text{ text-align:center; font-size:0.8rem; padding-top:0.4rem;}
 
-.taxusernew { top:0px; width:100%; margin-left:6rem; padding-left:1rem; margin-top:1rem; color:#fff;border-left:1px solid rgba(0,0,0,0.1); } 
+.taxusernew { top:0px; width:100%; margin-left:6rem; padding-left:1rem; margin-top:1rem; color:#fff;border-left:1px solid rgba(0,0,0,0.1); }
 .taxusernew h2{ font-weight:bold; padding-bottom: 0.5rem;}
 .taxusernew li{ font-size:0.9rem; color: rgba(255,255,255,0.99); line-height: 180%;}
 .taxusernew li:first-child{ font-weight:bold;}
@@ -143,7 +143,7 @@ nav{background: #ffffff;}
 
 .saixuan{ position:relative;border-bottom: 1px solid #eee; text-align: left; padding: 5px 0;}
 .saixuan ul{ padding:0 0 0 10px; margin: 0}
-.saixuan:after{display:block;clear:both;content:"";visibility:hidden;height:0} 
+.saixuan:after{display:block;clear:both;content:"";visibility:hidden;height:0}
 .saixuan li{ display: inline-block; line-height: 40px;}
 .saixuan li a{ background: #f0f2f5; color: #222326; border-radius: 3px; padding:4px 12px; border: 1px solid #f0f2f5}
 .saixuan li a.active{background: #ea4b35; color: #fff;border: 1px solid #ea4b35}
@@ -178,6 +178,7 @@ nav{background: #ffffff;}
 
 
 .bar_box{ overflow-y:scroll;}
+.dialogue{ height: calc(100vh - 90px); overflow-y: auto; }
 .dialogue_nav{ border-radius: 5px; background: #fff;}
 .dialogue li{ max-width:70%; position: relative; margin:10px auto;}
 .dialogue li .head_img{ width:46px; position: absolute;height:46px;  overflow: hidden;}
@@ -201,3 +202,28 @@ nav{background: #ffffff;}
     border-bottom:6px solid transparent; left:-6px;}
 
 
+.sendMsg-box{
+	height: 44px;
+	background: #fff;
+	border-top: 1px solid #eee;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.sendMsg-box input{
+	height: 36px;
+	border: none;
+	border-bottom: 1px solid #eee;
+	/*padding-bottom: 2px;*/
+	width: 240px;
+	margin: 0 20px;
+}
+.sendMsg-box .btn-send{
+	border-radius: 24px;
+	background: #ccc;
+	color: #fff;
+	width: 60px;
+	height: 32px;
+	line-height: 32px;
+
+}

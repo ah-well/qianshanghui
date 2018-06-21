@@ -125,8 +125,8 @@ h3,h4{font-size:16px}
 .ui-txt-justify{text-align:justify}
 .ui-txt-justify-one{overflow:hidden;height:24px;text-align:justify}
 .ui-txt-justify-one:after{display:inline-block;overflow:hidden;width:100%;height:0;content:''}
-.ui-border-t{border-top:1px solid #eee}
-.ui-border-b{border-bottom:1px solid #eee}
+.ui-border-t{border-top:1px solid #ddd}
+.ui-border-b{border-bottom:1px solid #ddd}
 .ui-border-tb{background-image:none}
 .ui-border-l{border-left:1px solid #e0e0e0}
 .ui-border-r{border-right:1px solid #e0e0e0}
@@ -137,7 +137,7 @@ h3,h4{font-size:16px}
 }
 @media screen and (-webkit-min-device-pixel-ratio:2){.ui-border{position:relative;border:0}
 .ui-border-b,.ui-border-l,.ui-border-r,.ui-border-t,.ui-border-tb{border:0}
-.ui-border-t{background-image:-webkit-gradient(linear,left bottom,left top,color-stop(.5,transparent),color-stop(.5,#e0e0e0),to(#e0e0e0));background-position:left top}
+.ui-border-t{background-image:-webkit-gradient(linear,left bottom,left top,color-stop(.5,transparent),color-stop(.5,#e0e0e0),to(#e0e0e0));background-position:left bottom}
 .ui-border-b{background-image:-webkit-gradient(linear,left top,left bottom,color-stop(.5,transparent),color-stop(.5,#e0e0e0),to(#e0e0e0));background-position:left bottom}
 .ui-border-b,.ui-border-t,.ui-border-tb{background-repeat:repeat-x;-webkit-background-size:100% 1px}
 .ui-border-tb{background-image:-webkit-gradient(linear,left bottom,left top,color-stop(.5,transparent),color-stop(.5,#e0e0e0),to(#e0e0e0)),-webkit-gradient(linear,left top,left bottom,color-stop(.5,transparent),color-stop(.5,#e0e0e0),to(#e0e0e0));background-position:top,bottom}
@@ -375,7 +375,7 @@ h3,h4{font-size:16px}
 .ui-list-pure>li,.ui-list-text>li{position:relative;padding-top:10px;padding-right:15px;padding-bottom:10px;-webkit-box-align:center}
 .ui-list-text h4,.ui-list-text p{-webkit-box-flex:1}
 .ui-list-cover>li{margin-left:0;padding-left:15px}
-.ui-list>li.ui-border-t:first-child,.ui-list>li:first-child>.ui-border-t{border:0;background-image:none}
+/*.ui-list>li.ui-border-t:first-child,.ui-list>li:first-child>.ui-border-t{border:0;background-image:none}*/
 .ui-list-icon,.ui-list-img,.ui-list-thumb,.ui-list-thumb-s{position:relative;margin:10px 10px 10px 0}
 .ui-list-icon>span,.ui-list-img>span,.ui-list-thumb-s>span,.ui-list-thumb>span{z-index:1;display:block;width:100%;height:100%;background-repeat:no-repeat;-webkit-background-size:cover}
 .ui-list-thumb{width:50px;height:50px}
@@ -390,7 +390,7 @@ h3,h4{font-size:16px}
 .ui-list li>h5,.ui-list:not(.ui-list-text) li>p{color:#777;font-size:14px}
 .ui-list li.active,.ui-list-active>li:active{margin-left:0;padding-left:15px;background-color:#e5e6e7}
 .ui-list-active>li:active,.ui-list>li.active,.ui-list>li.active+li.ui-border-t,.ui-list>li.active+li>.ui-border-t,.ui-list>li.active>.ui-border-t{background-image:none;border-top-color:#e5e6e7}
-.ui-list-link>li:after{position:absolute;top:50%;right:0px;display:block;margin-top:-22px;margin-right:5px;color:rgba(0,0,0,.5);color:#c7c7c7;content:"";font-style:normal;font-size:32px;font-family:iconfont!important;line-height:44px;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:.2px}
+.ui-list-link>li:after{position:absolute;top:50%;right:0px;display:block;margin-top:-22px;margin-right:-10px;color:rgba(0,0,0,.5);color:#c7c7c7;content:"";font-style:normal;font-size:32px;font-family:iconfont!important;line-height:44px;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:.2px}
 @media (max-width:320px){.ui-list-link>li:after{right:10px}
 }
 .ui-list-text.ui-list-link>li{padding-right:30px}
@@ -447,7 +447,7 @@ h3,h4{font-size:16px}
 .ui-form-item-r button:not(.disable88d):active{background-color:#e5e6e7}
 .ui-form-item-pure input,.ui-form-item-pure textarea{padding-left:0}
 .ui-form-item-show label{color:#222}
-.ui-form-item-link:after{position:absolute;top:50%;right:0px;display:block;margin-top:-22px;margin-right:-10px;color:rgba(0,0,0,.5);color:#c7c7c7;content:">";font-style:normal;font-size:24px;font-family:Agency FB!important;line-height:44px;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:.2px}
+.ui-form-item-link:after{position:absolute;top:50%;right:0px;display:block;margin-top:-22px;margin-right:-10px;color:rgba(0,0,0,.5);color:#c7c7c7;content:"";font-style:normal;font-size:32px;font-family:iconfont!important;line-height:44px;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:.2px}
 @media (max-width:320px){.ui-form-item-link:after{right:10px}
 }
 .ui-form-item-checkbox,.ui-form-item-radio,.ui-form-item-switch{display:-webkit-box;-webkit-box-align:center}

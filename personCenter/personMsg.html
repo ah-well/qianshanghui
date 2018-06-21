@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" type="text/css" href="../static/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="../static/framework7/css/framework7.ios.min.css" />
+    <link rel="stylesheet" type="text/css" href="../static/framework7/css/framework7.ios.colors.min.css" />
+    <link rel="stylesheet" type="text/css" href="../static/framework7/css/extend.css" />
+	<title>个人信息</title>
+	<script type="text/javascript" src="../static/js/jquery-1.9.0.min.js"></script>
+    <style type="text/css">
+        .list-group .item-inner .item-title{min-width:6rem;}
+    .takePhoto{position:relative;border-radius: 50%;background-size: 100% 100%;display:inline-block;width:10rem;height:10rem;line-height:10rem;font-size:1.6rem;color:#A9A9A9;text-align:center;border: 1px dotted #A9A9A9;}
+    .takePhoto input {position:absolute;width:10rem;height:10rem;right:0;top:0;opacity:0;filter:alpha(opacity=0);}
+    </style>
+	<script type="text/javascript">
+		$(function(){
+			
+		});
+	</script>
+</head>
+<body>
+	<div class="views">
+        <div class="view">
+            <div class="pages">
+                <div class="page" style="background-color: #EEEEEEE;overflow-y: scroll;font-size: 15px;">
+                    <div class="text-center mt2rem">
+                        <div id="licenseSpan" class="takePhoto" style="background-image:url(../static/images/psds65853.jpg)">
+                            <input id="licenseFile" type="file" name="headImgFile">
+                            <i>设置头像</i>
+                        </div>
+                        <img class="head-img" src="../static/images/psds65853.jpg" style="display:none;"></img>
+                    </div>
+                    <div class="list-block inset">
+                        <div class="text-center mt2rem mb05rem">必填信息</div>
+                        <div class="list-group">
+                            <ul>
+                              <li data-filed="NAME" class="item-content ent">
+                                <div class="item-inner">
+                                  <div class="item-title">真实姓名</div>
+                                  <div class="item-after">何大大</div>
+                                </div>
+                              </li>
+                              <li id="phoneNum" data-filed="PHONE_NUM" class="item-content">
+                                <div class="item-inner">
+                                  <div class="item-title">手机号</div>
+                                  <div class="item-after">1380013800</div>
+                                </div>
+                              </li>
+                              <li data-filed="PHONE_NUM" class="item-content">
+                                <div class="item-inner">
+                                  <div class="item-title">电&nbsp;&nbsp;&nbsp;&nbsp;话</div>
+                                  <div class="item-after">0756-3585208</div>
+                                </div>
+                              </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="text-center mt2rem mb05rem">基本信息</div>
+                        <div class="list-group">
+                            <ul>
+                              <li id="nativePlaceLi" data-filed="NATIVE_PLACE" class="item-content">
+                                <div class="item-inner">
+                                  <div class="item-title">籍贯</div>
+                                  <div id="nativePlace" class="item-after">广东</div>
+                                </div>
+                              </li>
+                              <li id="sexLi" data-filed="SEX" class="item-content">
+                                <div class="item-inner">
+                                  <div class="item-title">性别</div>
+                                  <div id="sex" class="item-after">男</div>
+                                </div>
+                              </li>
+                              <li id="birthDateLi" data-filed="BIRTH_DATE" class="item-content">
+                                <div class="item-inner">
+                                  <div class="item-title">生日</div>
+                                  <div id="birthDate" class="item-after">1983-07-29</div>
+                                </div>
+                              </li>
+                              <li data-filed="NICK_NAME" class="item-content ent">
+                                <div class="item-inner">
+                                  <div class="item-title">绰号</div>
+                                  <div class="item-after">狂风</div>
+                                </div>
+                              </li>
+                              <li data-filed="WX_NUMBER" class="item-content ent">
+                                <div class="item-inner">
+                                  <div class="item-title">微信</div>
+                                  <div class="item-after">与手机同号</div>
+                                </div>
+                              </li>
+                              <li data-filed="WX_NUMBER" class="item-content ent">
+                                <div class="item-inner">
+                                  <div class="item-title">Email</div>
+                                  <div class="item-after">1000@qq.com</div>
+                                </div>
+                              </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="text-center mt2rem mb05rem">选填信息</div>
+                        <div class="list-group mb2rem">
+                            <ul>
+                              <li id="workPlaceLi" data-filed="WORK_PLACE" class="item-content">
+                                <div class="item-inner">
+                                  <div class="item-title">工作地区</div>
+                                  <div id="workPlace" class="item-after">广东珠海</div>
+                                </div>
+                              </li>
+                              <li id="industryLi" data-filed="INDUSTRY" class="item-content">
+                                <div class="item-inner">
+                                  <div class="item-title">所属行业</div>
+                                  <div id="industry" class="item-after">计算机</div>
+                                </div>
+                              </li>
+                              <li data-filed="WORK_COMPANY_NAME" class="item-content ent">
+                                <div class="item-inner">
+                                  <div class="item-title">工作单位</div>
+                                  <div class="item-after">珠海999科技有限公司</div>
+                                </div>
+                              </li>
+                              <li data-filed="WORK_POST" class="item-content ent">
+                                <div class="item-inner">
+                                  <div class="item-title">工作岗位</div>
+                                  <div class="item-after">攻城狮</div>
+                                </div>
+                              </li>
+                            </ul>
+                        </div>
+                        <p style="margin:16px 0;padding:0 10px;"><a href="#" class="button button-round active">保存</a></p> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../static/js/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="../static/framework7/js/framework7.min.js"></script>
+    <script type="text/javascript" src="../static/framework7/package-js/AreaPicker.js"></script>
+    <script type="text/javascript" src="../static/framework7/package-js/SingleSelectPicker.js"></script>
+    <script type="text/javascript" src="../static/framework7/package-js/DatePicker.js"></script>
+    <script type="text/javascript" src="../static/framework7/package-js/utils.js"></script>
+    <script type="text/javascript" src="../static/js/personMsg.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            
+        });
+    </script>
+</body>
+</html>
