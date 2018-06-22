@@ -172,10 +172,10 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 .tempList a{
-    width: 90px;
+    width: 25vw;
     /*margin-right: 2%;*/
     margin: 0 3vw;
     margin-bottom: 12px;
