@@ -1,211 +1,155 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html >
 <head>
-	<meta charset="utf-8">
-    <meta name="format-detection" content="telephone=no"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <link rel="stylesheet" type="text/css" href="static/font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" type="text/css" href="static/framework7/css/framework7.ios.min.css" />
-    <link rel="stylesheet" type="text/css" href="static/framework7/css/framework7.ios.colors.min.css" />
-    <link rel="stylesheet" type="text/css" href="static/framework7/css/extend.css" />
-    <link rel="stylesheet" type="text/css" href="static/css/demo.css" />
-    <link rel="stylesheet" type="text/css" href="static/css/demo2.css" />
-	<title>通知公告——千商汇</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<title>公告通知</title>
+<script src="js/zepto.min.js"></script>
+<link href="css/swiper.min.css" rel="stylesheet">
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script src="js/frozen.js"></script>
+<link rel="stylesheet" href="css/frozen.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="static/framework7/css/framework7.ios.min.css" />
+<link rel="stylesheet" type="text/css" href="static/css/demo2.css" />
+
+<style type="text/css">
+    .ui-list-img{
+        width:72px;
+        height:72px;
+        /*margin: 0;*/
+    }
+    .ui-list{
+        width: 100%;
+        height: calc(100vh - 44px);
+        overflow-y: auto;
+    }
+    .ui-list>li{
+        width: calc(100vw - 30px);
+        padding: 0 15px;
+    }
+    .ui-form-item-link:after{
+        margin-right: 0;
+    }
+</style>
+
+
 </head>
 <body>
-	<div class="views">
-        <div class="view">
-            <div class="pages">
-                <div class="page notice">
-                    <div class="page-content">
-                        <div class="page-title">
-                            <i class="fa fa-angle-left" aria-hidden="true" onclick="javascript:history.back(-1);"></i>
-                            公告通知
-                        </div>
-                        <div class="navbar2">
-                          <div class="navbar-inner">
-                            <div class="left"></div>
-                            <div class="center">Sub Navbar</div>
-                            <div class="right"></div>
-                            <!-- Sub navbar -->
-                            <div class="subnavbar">
 
-                              <div class="buttons-row">
-                                <a href="#tab1" class="button tab-link active">未查看</a>
-                                <span class="vertical-line"></span>
-                                <a href="#tab2" class="button tab-link">全部通知</a>
-                                <!-- <a href="#tab3" class="button tab-link">Tab 3</a> -->
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="navbar-through">
-                          <!-- Pag has additional "with-subnavbar" class -->
-                          <div data-page="home" class="page with-subnavbar">
-                            <div class="page-content hide-bars-on-scroll">
-                              <div class="tabs">
-                                <div id="tab1" class="tab active">
-                                  <div class="content-block">
-                                    <ul class="noticeList">
-                                        <a href="noticeDetail.html" class="col-25 external">
-                                            <li>
-                                                <div>
-                                                    <h1>端午节放假如何玩得出“粽”？</h1>
-                                                    <label>发布于2018.6.12</label>
-                                                    <p>关于端午节放假的活动以及安排通知</p>
-                                                </div>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                            </li>
-                                        </a>
-                                        <a href="noticeDetail.html" class="col-25 external">
-                                            <li>
-                                               <div>
-                                                    <h1>端午节放假如何玩得出“粽”？</h1>
-                                                    <label>发布于2018.6.12</label>
-                                                    <p>关于端午节放假的活动以及安排通知</p>
-                                                </div>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                            </li>
-                                        </a>
-                                        <a href="noticeDetail.html" class="col-25 external">
-                                            <li>
-                                                <div>
-                                                    <h1>端午节放假如何玩得出“粽”？</h1>
-                                                    <label>发布于2018.6.12</label>
-                                                    <p>关于端午节放假的活动以及安排通知</p>
-                                                </div>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                            </li>
-                                        </a>
-                                        <a href="noticeDetail.html" class="col-25 external">
-                                            <li>
-                                                <div>
-                                                    <h1>端午节放假如何玩得出“粽”？</h1>
-                                                    <label>发布于2018.6.12</label>
-                                                    <p>关于端午节放假的活动以及安排通知</p>
-                                                </div>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                            </li>
-                                        </a>
-
-                                    </ul>
-                                  </div>
-                                </div>
-                                <div id="tab2" class="tab">
-                                  <div class="content-block">
-                                    <ul class="noticeList">
-                                        <a href="noticeDetail.html" class="col-25 external">
-                                            <li>
-                                                <div>
-                                                    <h1>端午节放假如何玩得出“粽”？</h1>
-                                                    <label>发布于2018.6.12</label>
-                                                    <p>关于端午节放假的活动以及安排通知</p>
-                                                </div>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                            </li>
-                                        </a>
-                                        <a href="noticeDetail.html" class="col-25 external">
-                                            <li>
-                                                <div>
-                                                    <h1>端午节放假如何玩得出“粽”？</h1>
-                                                    <label>发布于2018.6.12</label>
-                                                    <p>关于端午节放假的活动以及安排通知</p>
-                                                </div>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                            </li>
-                                        </a>
-                                        <a href="noticeDetail.html" class="col-25 external">
-                                            <li>
-                                                <div>
-                                                    <h1>端午节放假如何玩得出“粽”？</h1>
-                                                    <label>发布于2018.6.12</label>
-                                                    <p>关于端午节放假的活动以及安排通知</p>
-                                                </div>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                            </li>
-                                        </a>
-                                        <a href="noticeDetail.html" class="col-25 external">
-                                            <li>
-                                               <div>
-                                                    <h1>端午节放假如何玩得出“粽”？</h1>
-                                                    <label>发布于2018.6.12</label>
-                                                    <p>关于端午节放假的活动以及安排通知</p>
-                                                </div>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                            </li>
-                                        </a>
-                                        <a href="noticeDetail.html" class="col-25 external">
-                                            <li>
-                                                <div>
-                                                    <h1>端午节放假如何玩得出“粽”？</h1>
-                                                    <label>发布于2018.6.12</label>
-                                                    <p>关于端午节放假的活动以及安排通知</p>
-                                                </div>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                            </li>
-                                        </a>
-                                        <a href="noticeDetail.html" class="col-25 external">
-                                            <li>
-                                                <div>
-                                                    <h1>端午节放假如何玩得出“粽”？</h1>
-                                                    <label>发布于2018.6.12</label>
-                                                    <p>关于端午节放假的活动以及安排通知</p>
-                                                </div>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                            </li>
-                                        </a>
-                                        <a href="noticeDetail.html" class="col-25 external">
-                                            <li>
-                                                <div>
-                                                    <h1>端午节放假如何玩得出“粽”？</h1>
-                                                    <label>发布于2018.6.12</label>
-                                                    <p>关于端午节放假的活动以及安排通知</p>
-                                                </div>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                            </li>
-                                        </a>
-                                        <a href="noticeDetail.html" class="col-25 external">
-                                            <li>
-                                               <div>
-                                                    <h1>端午节放假如何玩得出“粽”？</h1>
-                                                    <label>发布于2018.6.12</label>
-                                                    <p>关于端午节放假的活动以及安排通知</p>
-                                                </div>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                            </li>
-                                        </a>
-                                    </ul>
-                                  </div>
-                                </div>
-                                <!-- <div id="tab3" class="tab">
-                                  <div class="content-block">
-                                    <p>Etiam non interdum erat...</p>
-                                    <p>Duis ac semper risus. Suspendisse...</p>
-                                    <p>Etiam non interdum erat...</p>
-                                    <p>Duis ac semper risus. Suspendisse...</p>
-                                  </div>
-                                </div> -->
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-					</div>
-                </div>
-            </div>
-        </div>
-
+<div class="box newsbox">
+    <div class="page-title">
+        <i class="fa fa-angle-left" aria-hidden="true" onclick="javascript:history.back(-1);"></i>
+        公告通知
     </div>
-    <script type="text/javascript" src="static/framework7/js/framework7.min.js"></script>
-    <script type="text/javascript">
-        var myApp = new Framework7({
-           animateNavBackIcon: true,
-           modalTitle:"千商汇demo",
-           modalButtonOk:"确定",
-           modalButtonCancel:"取消"
-        });
-    </script>
+
+    <div class="searchbar-overlay"></div>
+    <div class="message-content">
+        <ul class="ui-list">
+            <li class="ui-border-t ui-form-item-link">
+                <div class="ui-list-img">
+                     <span><img src="static/images/chang2/msg-avator-2.png"></span>
+                </div>
+                <div class="ui-list-info">
+                    <h4 class="ui-nowrap">金湾智慧园区平台</h4>
+                    <p class="ui-nowrap">使产品和服务像水和电融入人们的生活，为人们带来便捷和愉悦,关注不同地域、群体，并针对不同对象提供差异化的产品和服务</p>
+                    <div class="date"><span>2018年6月6日</span></div>
+                </div>
+            </li>
+            <li class="ui-border-t ui-form-item-link">
+                <div class="ui-list-img">
+                    <span><img src="static/images/chang2/msg-avator-1.png"></span>
+                </div>
+                <div class="ui-list-info">
+                    <h4 class="ui-nowrap">扬名广场招商</h4>
+                    <p class="ui-nowrap">信息时报讯 （记者 黄艳 通讯员 穗人社宣） 昨日，市人社局发布广州市人力资源和社会保障事业发展第十三个五年</p>
+                    <div class="date"><span>2018年6月6日</span></div>
+                </div>
+            </li>
+
+            <li class="ui-border-t ui-form-item-link">
+                <div class="ui-list-img">
+                    <span><img src="static/images/chang2/msg-avator-3.png"></span>
+                </div>
+                <div class="ui-list-info">
+                    <h4 class="ui-nowrap">电商网购平台制度推进</h4>
+                    <p class="ui-nowrap">今年我力推网购的平台首问责任制，带来的6个方案全都是站在消费者的角度上而提出来的。</p>
+                    <div class="date"><span>2018年6月6日</span> </div>
+                </div>
+            </li>
+
+            <li class="ui-border-t ui-form-item-link">
+                <div class="ui-list-img">
+                     <span><img src="static/images/chang2/msg-avator-5.png"></span>
+                </div>
+                <div class="ui-list-info">
+                    <h4 class="ui-nowrap">珠海公共创业实训孵化基地</h4>
+                    <p class="ui-nowrap">珠海市金湾区城市孵化园计划启动</p>
+                    <div class="date"><span>2018年6月6日</span> </div>
+                </div>
+            </li>
+
+            <li class="ui-border-t ui-form-item-link">
+                <div class="ui-list-img">
+                    <span><img src="static/images/chang2/msg-avator-6.png"></span>
+                </div>
+                <div class="ui-list-info">
+                    <h4 class="ui-nowrap">最新一轮国家中小型企业政策</h4>
+                    <p class="ui-nowrap">根据国家政府2018年最新新相关政策</p>
+                    <div class="date"><span>2018年6月6日</span> </div>
+                </div>
+            </li>
+
+            <li class="ui-border-t ui-form-item-link">
+                <div class="ui-list-img">
+                    <span><img src="static/images/chang2/msg-avator-5.png"></span>
+                </div>
+                <div class="ui-list-info">
+                    <h4 class="ui-nowrap">中山打印耗材设备</h4>
+                    <p class="ui-nowrap">你有一个苹果，我有一个苹果，我们交换</p>
+                    <div class="date"><span>2018年6月6日</span> </div>
+                </div>
+            </li>
+
+            <li class="ui-border-t ui-form-item-link">
+                <div class="ui-list-img">
+                     <span><img src="static/images/chang2/msg-avator-1.png"></span>
+                </div>
+                <div class="ui-list-info">
+                    <h4 class="ui-nowrap">人工智能AI硬件支持</h4>
+                    <p class="ui-nowrap">使产品和服务像水和电融入人们的生活，为人们带来便捷和愉悦,关注不同地域、群体，并针对不同对象提供差异化的产品和服务</p>
+                    <div class="date"><span>2018年6月6日</span> </div>
+                </div>
+            </li>
+
+            <li class="ui-border-t ui-form-item-link">
+                <div class="ui-list-img">
+                     <span><img src="static/images/chang2/msg-avator-2.png"></span>
+                </div>
+                <div class="ui-list-info">
+                    <h4 class="ui-nowrap">新零售未来将焕发实体店的新活力</h4>
+                    <p class="ui-nowrap">使产品和服务像水和电融入人们的生活，为人们带来便捷和愉悦,关注不同地域、群体，并针对不同对象提供差异化的产品和服务</p>
+                    <div class="date"><span>2018年6月6日</span> </div>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+
+</div>
+
+
+
 </body>
+<script type="text/javascript" src="static/framework7/js/framework7.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $(".ui-form-item-link").each(function(){
+            $(this).click(function(){
+                window.location.href = "noticeDetail.html"
+            })
+        })
+    })
+</script>
 </html>

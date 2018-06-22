@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-<title>商会会议</title>
+<title>商会文件</title>
 <script src="js/zepto.min.js"></script>
 <link href="css/swiper.min.css" rel="stylesheet">
 <script type="text/javascript" src="js/swiper.min.js"></script>
@@ -53,22 +53,13 @@
 
 <script type="text/javascript">
 
-// $(function () {
-
-//     $(".ui-form-item-link").click(function(){
-//         openNewWindow();
-//     });
-// });
-
-
-// //打开新窗口，一切事件都调用该方法
-// function openNewWindow() {
-//     //var a = $('a')[0];
-//     let a = $("<a href='dialog.html' target='_self'>baidu</a>").get(0);
-//     let e = document.createEvent('MouseEvents');
-//     e.initEvent( 'click', true, true );
-//     a.dispatchEvent(e);
-// }
+$(function(){
+    $(".ui-form-item-link").each(function(){
+        $(this).click(function(){
+            window.location.href="fileDetail.html"
+        })
+    })
+})
 
 </script>
 
@@ -80,7 +71,7 @@
 
     <div class="page-title">
         <i class="fa fa-angle-left" aria-hidden="true" onclick="javascript:history.back(-1);"></i>
-        商会会议
+        商会文件
     </div>
 
 	<div class="message-content">
@@ -92,7 +83,7 @@
                 <div class="ui-list-info">
                     <h4 class="ui-nowrap">金湾智慧园区系统需求文档</h4>
                     <p class="ui-nowrap">使产品和服务像水和电融入人们的生活，为人们带来便捷和愉悦,关注不同地域、群体，并针对不同对象提供差异化的产品和服务</p>
-                    <div class="date"><span>发布人：李丽</span><span>2018年6月6日</span> </div>
+                    <div class="date"><span>上传者：魏古</span><span>2018年6月6日</span> </div>
                 </div>
             </li>
             <li class="ui-border-t ui-form-item-link">
@@ -102,7 +93,7 @@
                 <div class="ui-list-info">
                     <h4 class="ui-nowrap">新零售战略路线图</h4>
                     <p class="ui-nowrap">使产品和服务像水和电融入人们的生活，为人们带来便捷和愉悦,关注不同地域、群体，并针对不同对象提供差异化的产品和服务</p>
-                    <div class="date"><span>发布人：张生</span><span>2018年6月6日</span> </div>
+                    <div class="date"><span>上传者：张生</span><span>2018年6月6日</span> </div>
                 </div>
             </li>
             <li class="ui-border-t ui-form-item-link">
@@ -112,7 +103,7 @@
                 <div class="ui-list-info">
                     <h4 class="ui-nowrap">商业合作群</h4>
                     <p class="ui-nowrap">使产品和服务像水和电融入人们的生活，为人们带来便捷和愉悦,关注不同地域、群体，并针对不同对象提供差异化的产品和服务</p>
-                    <div class="date"><span>发布人：张生</span><span>2018年6月6日</span> </div>
+                    <div class="date"><span>上传者：崔世佳</span><span>2018年6月6日</span> </div>
                 </div>
             </li>
             <li class="ui-border-t ui-form-item-link">
@@ -122,7 +113,7 @@
                 <div class="ui-list-info">
                     <h4 class="ui-nowrap">商业合作群</h4>
                     <p class="ui-nowrap">使产品和服务像水和电融入人们的生活，为人们带来便捷和愉悦,关注不同地域、群体，并针对不同对象提供差异化的产品和服务</p>
-                    <div class="date"><span>发布人：张生</span><span>2018年6月6日</span> </div>
+                    <div class="date"><span>上传者：李想</span><span>2018年6月6日</span> </div>
                 </div>
             </li>
             <li class="ui-border-t ui-form-item-link">
@@ -132,7 +123,7 @@
                 <div class="ui-list-info">
                     <h4 class="ui-nowrap">商业合作群</h4>
                     <p class="ui-nowrap">使产品和服务像水和电融入人们的生活，为人们带来便捷和愉悦,关注不同地域、群体，并针对不同对象提供差异化的产品和服务</p>
-                    <div class="date"><span>发布人：张生</span><span>2018年6月6日</span> </div>
+                    <div class="date"><span>上传者：王往</span><span>2018年6月6日</span> </div>
                 </div>
             </li>
 

@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="static/framework7/css/extend.css" />
     <link rel="stylesheet" type="text/css" href="static/css/demo.css" />
     <link rel="stylesheet" type="text/css" href="static/css/demo2.css" />
-	<title>需求通告</title>
+	<title>资源供求</title>
 </head>
 <body>
 	<div class="views">
@@ -130,18 +130,24 @@
                                 </div>
                                 <div id="tab2" class="tab">
                                   <div class="content-block">
-                                    <ul class="noticeList">
-                                        <li>
-                                            <h1>端午节放假如何玩得出“粽”？</h1>
-                                            <label>发布于2018.6.12</label>
-                                            <p>关于端午节放假的活动以及安排通知</p>
-                                        </li>
-                                        <li>
-                                            <h1>端午节放假如何玩得出“粽”？</h1>
-                                            <label>发布于2018.6.12</label>
-                                            <p>关于端午节放假的活动以及安排通知</p>
-                                        </li>
-                                    </ul>
+                                    <form class="form-require">
+                                        <ul>
+                                            <li>
+                                                <label>标题</label>
+                                                <input type="text" name="title" placeholder="填写需求标题">
+                                            </li>
+                                            <li>
+                                                <label>类型</label>
+                                                <input type="text" name="type" placeholder="填写资源类型">
+                                            </li>
+                                            <li>
+                                                <label>内容</label>
+                                                <textarea placeholder="填写详细的需求内容"></textarea>
+                                            </li>
+                                        </ul>
+
+                                    </form>
+                                    <input id="btn-public" type="submit" name="" value="发布">
                                   </div>
                                 </div>
 

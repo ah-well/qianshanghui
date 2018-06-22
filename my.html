@@ -116,6 +116,30 @@
     </ul>
 </div>
 
+<div class="box padd15a minebox">
+    <ul class="ui-list ui-list-one ui-list-link ">
+
+        <li class="ui-border-t">
+            <div class="ui-list-thumb">
+              <span><img src="static/images/chang2/my-entportal.png" alt=""/></span>
+            </div>
+            <div class="ui-list-info">
+                <h4 class="ui-nowrap">企业模板</h4>
+
+            </div>
+        </li>
+        <li class="ui-border-t">
+            <div class="ui-list-thumb">
+                <span><img src="static/images/chang2/my-entshow.png" alt=""/></span>
+            </div>
+            <div class="ui-list-info ui-border-t">
+                <h4 class="ui-nowrap">企业展示</h4>
+                <div class="ui-reddot ui-reddot-static"></div>
+            </div>
+        </li>
+    </ul>
+</div>
+
 
 <!-- <div class="box padd15a minebox">
     <ul class="ui-list ui-list-one ui-list-link ">
@@ -159,7 +183,7 @@
         $(this).click(function(){
             switch ($(this).index()){
                 case 0:
-                    window.location.href="a新闻公告.html";
+                    window.location.href="personCenter/join.html";
                     break;
                 case 1:
                     window.location.href="a商会活动.html";
@@ -177,6 +201,21 @@
                     break;
                 case 1:
                     window.location.href="a商会活动.html";
+                    break;
+                default:
+                    console.log("++++++++")
+            }
+
+        })
+    })
+    $(".minebox").eq(2).find(".ui-border-t").each(function(){
+        $(this).click(function(){
+            switch ($(this).index()){
+                case 0:
+                    window.location.href="myEntShow.html";
+                    break;
+                case 1:
+                    window.location.href="../template/index.html?isBase=1";
                     break;
                 default:
                     console.log("++++++++")

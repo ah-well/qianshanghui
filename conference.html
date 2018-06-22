@@ -18,10 +18,11 @@
     .ui-list-img{
         width:72px;
         height:72px;
+        /*margin: 0;*/
     }
     .ui-list{
         width: 100%;
-        height: calc(100vh - 40px);
+        height: calc(100vh - 44px);
         overflow-y: auto;
     }
     .ui-list>li{
@@ -31,77 +32,94 @@
     .ui-form-item-link:after{
         margin-right: 0;
     }
-
-    .date{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
 </style>
-
-<script type="text/javascript">
-
-// $(function () {
-
-//     $(".ui-form-item-link").click(function(){
-//         openNewWindow();
-//     });
-// });
-
-
-// //打开新窗口，一切事件都调用该方法
-// function openNewWindow() {
-//     //var a = $('a')[0];
-//     let a = $("<a href='dialog.html' target='_self'>baidu</a>").get(0);
-//     let e = document.createEvent('MouseEvents');
-//     e.initEvent( 'click', true, true );
-//     a.dispatchEvent(e);
-// }
-
-</script>
 
 
 </head>
 <body>
 
 <div class="box newsbox">
-
     <div class="page-title">
         <i class="fa fa-angle-left" aria-hidden="true" onclick="javascript:history.back(-1);"></i>
         商会会议
     </div>
 
-	<div class="message-content">
+    <div class="searchbar-overlay"></div>
+    <div class="message-content">
         <ul class="ui-list">
-            <!-- <li class="ui-border-t ui-form-item-link">
+            <li class="ui-border-t ui-form-item-link">
+                <div class="ui-list-img">
+                     <span><img src="static/images/chang2/msg-avator-6.png"></span>
+                </div>
+                <div class="ui-list-info">
+                    <h4 class="ui-nowrap">金湾智慧园区服务平台项目招标</h4>
+                    <p class="ui-nowrap">根据需求文档，按照文档里指定模板功能、技术、环境进行开发，并能保证一定的售后服务。</p>
+                    <div class="date"><span>2018年6月6日</span></div>
+                </div>
+            </li>
+            <li class="ui-border-t ui-form-item-link">
+                <div class="ui-list-img">
+                    <span><img src="static/images/chang2/msg-avator-5.png"></span>
+                </div>
+                <div class="ui-list-info">
+                    <h4 class="ui-nowrap">社会人力资源保障局</h4>
+                    <p class="ui-nowrap">信息时报讯 （记者 黄艳 通讯员 穗人社宣） 昨日，市人社局发布广州市人力资源和社会保障事业发展第十三个五年</p>
+                    <div class="date"><span>2018年6月6日</span></div>
+                </div>
+            </li>
+
+            <li class="ui-border-t ui-form-item-link">
+                <div class="ui-list-img">
+                    <span><img src="static/images/chang2/msg-avator-4.png"></span>
+                </div>
+                <div class="ui-list-info">
+                    <h4 class="ui-nowrap">校企合作招聘会</h4>
+                    <p class="ui-nowrap">方便广大师生在这个平台上进行高效地沟通以及合作。</p>
+                    <div class="date"><span>2018年6月6日</span> </div>
+                </div>
+            </li>
+
+            <li class="ui-border-t ui-form-item-link">
                 <div class="ui-list-img">
                      <span><img src="static/images/chang2/msg-avator-3.png"></span>
                 </div>
                 <div class="ui-list-info">
-                    <h4 class="ui-nowrap">商业合作群</h4>
-                    <p class="ui-nowrap">使产品和服务像水和电融入人们的生活，为人们带来便捷和愉悦,关注不同地域、群体，并针对不同对象提供差异化的产品和服务</p>
-                    <div class="date"><span>6月6日</span> </div>
-                </div>
-            </li> -->
-            <li class="ui-border-t ui-form-item-link">
-                <div class="ui-list-info">
-                    <h4 class="ui-nowrap">商业合作群</h4>
-                    <p class="ui-nowrap">使产品和服务像水和电融入人们的生活，为人们带来便捷和愉悦,关注不同地域、群体，并针对不同对象提供差异化的产品和服务</p>
-                    <div class="date"><span>2018年6月6日</span> <span>查看全文</span></div>
+                    <h4 class="ui-nowrap">智能锁合作项目</h4>
+                    <p class="ui-nowrap">寻求资源互助，共同开发软硬件产品。</p>
+                    <div class="date"><span>2018年6月6日</span> </div>
                 </div>
             </li>
+
             <li class="ui-border-t ui-form-item-link">
+                <div class="ui-list-img">
+                    <span><img src="static/images/chang2/msg-avator-2.png"></span>
+                </div>
                 <div class="ui-list-info">
-                    <h4 class="ui-nowrap">商业合作群</h4>
-                    <p class="ui-nowrap">使产品和服务像水和电融入人们的生活，为人们带来便捷和愉悦,关注不同地域、群体，并针对不同对象提供差异化的产品和服务</p>
-                    <div class="date"><span>2018年6月7日</span> <span>查看全文</span></div>
+                    <h4 class="ui-nowrap">国务院相关规定</h4>
+                    <p class="ui-nowrap">根据国家政府2018年最新新相关政策</p>
+                    <div class="date"><span>2018年6月6日</span> </div>
                 </div>
             </li>
+
             <li class="ui-border-t ui-form-item-link">
+                <div class="ui-list-img">
+                    <span><img src="static/images/chang2/msg-avator-1.png"></span>
+                </div>
                 <div class="ui-list-info">
-                    <h4 class="ui-nowrap">商业合作群</h4>
-                    <p class="ui-nowrap">使产品和服务像水和电融入人们的生活，为人们带来便捷和愉悦,关注不同地域、群体，并针对不同对象提供差异化的产品和服务</p>
-                    <div class="date"><span>2018年6月8日</span> <span>查看全文</span></div>
+                    <h4 class="ui-nowrap">百度无人驾驶汽车发布会</h4>
+                    <p class="ui-nowrap">引领国内无人驾驶市场，争先第一个吃螃蟹。</p>
+                    <div class="date"><span>2018年6月6日</span> </div>
+                </div>
+            </li>
+
+            <li class="ui-border-t ui-form-item-link">
+                <div class="ui-list-img">
+                     <span><img src="static/images/chang2/msg-avator-6.png"></span>
+                </div>
+                <div class="ui-list-info">
+                    <h4 class="ui-nowrap">探索国内市场的商业模式</h4>
+                    <p class="ui-nowrap">对比国内外市场，分析两者的商业模式</p>
+                    <div class="date"><span>2018年6月6日</span> </div>
                 </div>
             </li>
 
@@ -114,4 +132,13 @@
 
 </body>
 <script type="text/javascript" src="static/framework7/js/framework7.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $(".ui-form-item-link").each(function(){
+            $(this).click(function(){
+                window.location.href = "conferenceDetail.html"
+            })
+        })
+    })
+</script>
 </html>

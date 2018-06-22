@@ -7,6 +7,7 @@
 .btn-ruturn{
     position: relative;
     z-index: 2;
+    color:#eee;
 }
 .searchbar{
     background: #333;
@@ -326,7 +327,7 @@
 .navbar-through{
     position: relative;
     width: 100%;
-    height: calc(100% - 84px);
+    height: calc(100% - 88px);
     overflow: hidden;
     background: #000;
     /*top: -44px;*/
@@ -502,7 +503,7 @@
     height: 80px;
 }
 .contact-info{
-    width: 240px;
+    width: 250px;
     color: #333;
     display: flex;
     flex-direction: column;
@@ -539,7 +540,7 @@
     /*opacity: 0;*/
 }
 
-
+/*标题*/
 .page-title{
   text-align: center;
   width: 100%;
@@ -556,4 +557,52 @@
     position: absolute;
     left: 15px;
     font-size: 16pt;
+}
+
+/*发布资源供求*/
+#tab2{
+
+}
+.form-require{
+    background: #fff;
+    color: #333;
+    height: 300px;
+    /*width: 100%;*/
+    padding: 0 15px;
+    font-size: 10pt;
+}
+.form-require input{
+    width: 260px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+
+}
+.form-require textarea{
+    width: 260px;
+    height: 160px;
+    padding: 6px 0;
+}
+.form-require ul{
+    /*flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;*/
+}
+.form-require ul li{
+    /*height: 40px;*/
+    padding: 10px 0;
+    width: ;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+#btn-public{
+    display: block;
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 16px;
+    background: #007aff;
+    color: #fff;
+    margin:  20px auto;
 }

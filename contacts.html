@@ -15,6 +15,10 @@
 <link rel="stylesheet" type="text/css" href="static/css/demo2.css" />
 
 <style type="text/css">
+    .ui-list{
+        height: calc(100vh - 88px);
+        overflow-y: auto;
+    }
     .ui-list>li{
         width: calc(100vw - 30px);
         padding: 0 15px;
@@ -84,6 +88,54 @@
                 <h4 class="ui-nowrap">雷军</h4>
             </div>
         </li>
+        <li class="ui-border-t">
+            <div class="ui-list-icon">
+                <img src="static/images/chang2/msg-avator-7.jpg">
+            </div>
+            <div class="ui-list-info">
+                <h4 class="ui-nowrap">王健林</h4>
+            </div>
+        </li>
+        <li class="ui-border-t">
+            <div class="ui-list-icon">
+                <img src="static/images/chang2/msg-avator-8.jpg">
+            </div>
+            <div class="ui-list-info">
+                <h4 class="ui-nowrap">史玉柱</h4>
+            </div>
+        </li>
+        <li class="ui-border-t">
+            <div class="ui-list-icon">
+                <img src="static/images/chang2/msg-avator-9.jpg">
+            </div>
+            <div class="ui-list-info">
+                <h4 class="ui-nowrap">李彦宏</h4>
+            </div>
+        </li>
+        <li class="ui-border-t">
+            <div class="ui-list-icon">
+                <img src="static/images/chang2/msg-avator-10.jpg">
+            </div>
+            <div class="ui-list-info">
+                <h4 class="ui-nowrap">许家印</h4>
+            </div>
+        </li>
+        <li class="ui-border-t">
+            <div class="ui-list-icon">
+                <img src="static/images/chang2/msg-avator-11.jpg">
+            </div>
+            <div class="ui-list-info">
+                <h4 class="ui-nowrap">丁磊</h4>
+            </div>
+        </li>
+        <li class="ui-border-t">
+            <div class="ui-list-icon">
+                <img src="static/images/chang2/msg-avator-12.jpg">
+            </div>
+            <div class="ui-list-info">
+                <h4 class="ui-nowrap">周鸿祎</h4>
+            </div>
+        </li>
     </ul>
 </div>
 
@@ -102,4 +154,13 @@
 
 
 </body>
+<script type="text/javascript">
+    $(function(){
+        $(".ui-border-t").each(function(){
+            $(this).click(function(){
+                window.location.href="userInfo.html"
+            })
+        })
+    })
+</script>
 </html>

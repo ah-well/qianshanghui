@@ -18,10 +18,11 @@
     .ui-list-img{
         width:72px;
         height:72px;
+        /*margin: 0;*/
     }
     .ui-list{
         width: 100%;
-        height: calc(100vh - 40px);
+        height: calc(100vh - 44px);
         overflow-y: auto;
     }
     .ui-list>li{
@@ -31,80 +32,96 @@
     .ui-form-item-link:after{
         margin-right: 0;
     }
-
-    .date{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
 </style>
-
-<script type="text/javascript">
-
-// $(function () {
-
-//     $(".ui-form-item-link").click(function(){
-//         openNewWindow();
-//     });
-// });
-
-
-// //打开新窗口，一切事件都调用该方法
-// function openNewWindow() {
-//     //var a = $('a')[0];
-//     let a = $("<a href='dialog.html' target='_self'>baidu</a>").get(0);
-//     let e = document.createEvent('MouseEvents');
-//     e.initEvent( 'click', true, true );
-//     a.dispatchEvent(e);
-// }
-
-</script>
 
 
 </head>
 <body>
 
 <div class="box newsbox">
-
     <div class="page-title">
         <i class="fa fa-angle-left" aria-hidden="true" onclick="javascript:history.back(-1);"></i>
         商会活动
     </div>
 
+    <div class="searchbar-overlay"></div>
     <div class="message-content">
         <ul class="ui-list">
-            <!-- <li class="ui-border-t ui-form-item-link">
+            <li class="ui-border-t ui-form-item-link">
+                <div class="ui-list-img">
+                     <span><img src="static/images/chang2/msg-avator-4.png"></span>
+                </div>
+                <div class="ui-list-info">
+                    <h4 class="ui-nowrap">商业合作</h4>
+                    <p class="ui-nowrap">使产品和服务像水和电融入人们的生活，为人们带来便捷和愉悦,关注不同地域、群体，并针对不同对象提供差异化的产品和服务</p>
+                    <div class="date"><span>2018年6月6日</span></div>
+                </div>
+            </li>
+            <li class="ui-border-t ui-form-item-link">
+                <div class="ui-list-img">
+                    <span><img src="static/images/chang2/msg-avator-1.png"></span>
+                </div>
+                <div class="ui-list-info">
+                    <h4 class="ui-nowrap">共享单车融资项目商业计划</h4>
+                    <p class="ui-nowrap">信息时报讯 （记者 黄艳 通讯员 穗人社宣） 昨日，市人社局发布广州市人力资源和社会保障事业发展第十三个五年</p>
+                    <div class="date"><span>2018年6月6日</span></div>
+                </div>
+            </li>
+
+            <li class="ui-border-t ui-form-item-link">
+                <div class="ui-list-img">
+                    <span><img src="static/images/chang2/msg-avator-2.png"></span>
+                </div>
+                <div class="ui-list-info">
+                    <h4 class="ui-nowrap">空气净化器项目商业计划</h4>
+                    <p class="ui-nowrap">今年我力推网购的平台首问责任制，带来的6个方案全都是站在消费者的角度上而提出来的。</p>
+                    <div class="date"><span>2018年6月6日</span> </div>
+                </div>
+            </li>
+
+            <li class="ui-border-t ui-form-item-link">
                 <div class="ui-list-img">
                      <span><img src="static/images/chang2/msg-avator-3.png"></span>
                 </div>
                 <div class="ui-list-info">
-                    <h4 class="ui-nowrap">商业合作群</h4>
-                    <p class="ui-nowrap">使产品和服务像水和电融入人们的生活，为人们带来便捷和愉悦,关注不同地域、群体，并针对不同对象提供差异化的产品和服务</p>
-                    <div class="date"><span>6月6日</span> </div>
-                </div>
-            </li> -->
-            <li class="ui-border-t ui-form-item-link">
-                <div class="ui-list-info">
-                    <h4 class="ui-nowrap">商业合作群</h4>
-                    <p class="ui-nowrap">使产品和服务像水和电融入人们的生活，为人们带来便捷和愉悦,关注不同地域、群体，并针对不同对象提供差异化的产品和服务</p>
-                    <div class="date"><span>2018年6月6日</span> <span>查看全文</span></div>
-                </div>
-            </li>
-            <li class="ui-border-t ui-form-item-link">
-                <div class="ui-list-info">
-                    <h4 class="ui-nowrap">商业合作群</h4>
-                    <p class="ui-nowrap">使产品和服务像水和电融入人们的生活，为人们带来便捷和愉悦,关注不同地域、群体，并针对不同对象提供差异化的产品和服务</p>
-                    <div class="date"><span>2018年6月7日</span> <span>查看全文</span></div>
-                </div>
-            </li>
-            <li class="ui-border-t ui-form-item-link">
-                <div class="ui-list-info">
-                    <h4 class="ui-nowrap">商业合作群</h4>
-                    <p class="ui-nowrap">使产品和服务像水和电融入人们的生活，为人们带来便捷和愉悦,关注不同地域、群体，并针对不同对象提供差异化的产品和服务</p>
-                    <div class="date"><span>2018年6月8日</span> <span>查看全文</span></div>
+                    <h4 class="ui-nowrap">新能源汽车租赁服务商业</h4>
+                    <p class="ui-nowrap">珠海市金湾区城市孵化园计划启动</p>
+                    <div class="date"><span>2018年6月6日</span> </div>
                 </div>
             </li>
 
+            <li class="ui-border-t ui-form-item-link">
+                <div class="ui-list-img">
+                    <span><img src="static/images/chang2/msg-avator-4.png"></span>
+                </div>
+                <div class="ui-list-info">
+                    <h4 class="ui-nowrap">在线教育，在线办公</h4>
+                    <p class="ui-nowrap">根据国家政府2018年最新新相关政策</p>
+                    <div class="date"><span>2018年6月6日</span> </div>
+                </div>
+            </li>
+
+            <li class="ui-border-t ui-form-item-link">
+                <div class="ui-list-img">
+                    <span><img src="static/images/chang2/msg-avator-5.png"></span>
+                </div>
+                <div class="ui-list-info">
+                    <h4 class="ui-nowrap">元润纸品商业计划书</h4>
+                    <p class="ui-nowrap">你有一个苹果，我有一个苹果，我们交换</p>
+                    <div class="date"><span>2018年6月6日</span> </div>
+                </div>
+            </li>
+
+            <li class="ui-border-t ui-form-item-link">
+                <div class="ui-list-img">
+                     <span><img src="static/images/chang2/msg-avator-6.png"></span>
+                </div>
+                <div class="ui-list-info">
+                    <h4 class="ui-nowrap">家装商业服务平台</h4>
+                    <p class="ui-nowrap">使产品和服务像水和电融入人们的生活，为人们带来便捷和愉悦,关注不同地域、群体，并针对不同对象提供差异化的产品和服务</p>
+                    <div class="date"><span>2018年6月6日</span> </div>
+                </div>
+            </li>
         </ul>
     </div>
 
@@ -114,4 +131,13 @@
 
 </body>
 <script type="text/javascript" src="static/framework7/js/framework7.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $(".ui-form-item-link").each(function(){
+            $(this).click(function(){
+                window.location.href = "activityDetail.html"
+            })
+        })
+    })
+</script>
 </html>
